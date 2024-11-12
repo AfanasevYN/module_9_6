@@ -1,12 +1,9 @@
 
 def all_variants(text):
-    if not text:
-        yield ""
-        return
 
-    for i in range(len(text)):
-        for l in range(len(text) - i):
-            sub = text[l:l + i + 1]
+    for r in range(len(text)):
+        for l in range(len(text) - r):
+            sub = text[l:l + r + 1]
             yield sub
 
 
